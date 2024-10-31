@@ -1,0 +1,95 @@
+.wrapper {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: var(--default-header-height);
+  background-color: var(--yellow);
+  display: flex;
+  padding: 1rem 2.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+  column-gap: 265px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 0.625rem;
+  &Name {
+    color: #000;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.menuBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  &Item {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: #000;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:hover {
+      color: #007bff; /* Change to your desired hover color */
+    }
+  }
+}
+.groupButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  &Login {
+    display: flex;
+    width: 6.25rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    
+  }
+  &SignUp {
+    display: flex;
+    width: 6.25rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    border-radius: 0.125rem;
+    background: #20c6b1;
+
+    color: #fff;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    &:hover{
+      color:#000;
+      &::after{
+        border: 1px solid #0a0f0e;
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,349 @@
+.heroSection {
+    display: flex;
+    padding: 4.375rem 2.5rem 0rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 9.5rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+    background-color: var(--yellow);
+    &FindApply {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        .findAndApply {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            align-self: stretch;
+
+            &Content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+                align-self: stretch;
+
+                &Title {
+                    align-self: stretch;
+                    color: #000;
+                    font-family: Nunito;
+                    font-size: 1.75rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                &Description {
+                    color: #000;
+                    font-family: Nunito;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    align-self: stretch;
+                }
+            }
+            &Search {
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+
+                &Input {
+                    padding: 0.5rem 1rem;
+                    width: 25.5rem;
+                    height: 3.1875rem;
+                }
+                &Button {
+                    width: 6.25rem;
+                    display: flex;
+                    height: 3.1875rem;
+                    padding: 0.625rem;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.625rem;
+                    flex: 1 0 0;
+
+                    border-radius: 0.125rem;
+                    background: #20c6b1;
+
+                    color: #fff;
+                    font-family: Nunito;
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+        .quickSearch {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+
+            &Title {
+                display: flex;
+                padding: 0.5rem 0.5rem 0.5rem 0rem;
+                align-items: center;
+                gap: 0.625rem;
+                align-self: stretch;
+                .content {
+                    color: #000;
+                    font-family: Nunito;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            &Result {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+
+                border-radius: 0.125rem;
+            }
+
+            .tear {
+                display: flex;
+                align-items: flex-start;
+                gap: 0.5rem;
+                .quickSearchResultItem {
+                    display: flex;
+                    padding: 0.5rem;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.625rem;
+
+                    background: #ebf0f3;
+
+                    h3 {
+                        color: #000;
+                        font-family: Nunito;
+                        font-size: 0.875rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    &Content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 0.625rem;
+        &Image {
+            display: flex;
+            padding: 0.625rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.625rem;
+        }
+
+        &Congratulations {
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+
+            position: absolute;
+            left: 5.375rem;
+            bottom: 2.125rem;
+
+            border-radius: 0.625rem;
+            background: #ebf0f3;
+
+            &Content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                .textHight {
+                    color: #20c6b1;
+                    font-family: Nunito;
+                    font-size: 1.2rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                .text {
+                    color: #000;
+                    font-family: Nunito;
+                    font-size: 1.2rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            .imageLeft {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 0.625rem;
+            }
+            .imageRight {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 0.625rem;
+            }
+        }
+
+        &Feedback {
+            display: flex;
+            padding: 1rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            width: 13.2rem;
+
+            position: absolute;
+            right: -0.1875rem;
+            top: 1.75rem;
+
+            border-radius: 0.625rem;
+            background: #ebf0f3;
+
+            &Image {
+                width: 2rem;
+                height: 2rem;
+            }
+            &Text {
+                color: #000;
+                font-family: Nunito;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        &Member {
+            display: flex;
+            height: 8.4375rem;
+            padding: 1.5rem 1rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+
+            position: absolute;
+            right: 1.12863rem;
+            bottom: 2.3125rem;
+
+            border-radius: 0.625rem;
+            background: #ebf0f3;
+
+            .number {
+                color: #000;
+                font-family: Nunito;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            .decr {
+                color: #000;
+                font-family: Nunito;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .groupImage {
+                display: flex;
+                padding: 0rem 0.15rem;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &Jobs {
+            display: flex;
+            padding: 1rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+
+            position: absolute;
+            left: 3.875rem;
+            top: 4.375rem;
+
+            border-radius: 0.625rem;
+            background: #ebf0f3;
+            &Header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                align-self: stretch;
+                .Logo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.25rem;
+                    flex: 1 0 0;
+                    .logo1 {
+                        width: 4.0625rem;
+                        height: 1rem;
+                    }
+                    .logoName {
+                        color: #000;
+                        font-family: Nunito;
+                        font-size: 0.875rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            &Content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+
+                .contentName {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    align-self: stretch;
+                }
+                .normal {
+                    color: #000;
+                    font-family: Nunito;
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .highlight {
+                    color: #20c6b1;
+                    font-family: Nunito;
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
