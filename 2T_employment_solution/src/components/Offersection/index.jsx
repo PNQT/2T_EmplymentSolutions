@@ -20,13 +20,13 @@ function OfferSection() {
                         </div>
                         <div className={cx("content")}>
                            <p className={cx("title")}> 
-                              Solutions that will take your recruitment 
+                              Solutions that will take your recruitment <br />
                               to the next level!
                             </p>                  
                         </div>
                         <div className={cx("footer")}>
                             <p className={cx("decription")}>
-                            We build effective strategies that will help you reach 
+                            We build effective strategies that will help you reach <br />
                             employers worldwide.
                             </p>
                         </div>   

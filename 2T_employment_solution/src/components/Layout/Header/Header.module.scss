@@ -24,6 +24,7 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 700;
+    font-size: 1.8rem;
     line-height: normal;
   }
 }
@@ -44,10 +45,12 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 400;
+    font-size: 1.7rem;
     line-height: normal;
 
     &:hover {
-      color: #007bff; /* Change to your desired hover color */
+    
+      color: #20c6b1; /* Change to your desired hover color */
     }
   }
 }
@@ -85,7 +88,9 @@
     line-height: normal;
 
     &:hover{
-      color:#000;
+      background-color: #fff;
+      border-color: #20c6b1;
+      color: #20c6b1;
       &::after{
         border: 1px solid #0a0f0e;
       }
