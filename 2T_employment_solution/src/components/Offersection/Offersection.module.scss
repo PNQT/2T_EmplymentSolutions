@@ -1,0 +1,177 @@
+.container {
+    display: flex;
+    padding: 4.375rem 2.5rem 0rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 9.5rem;
+    align-self: stretch;
+    flex-wrap: wrap;
+
+    background: #f2fffd;
+
+    .glassMan {
+        display: flex;
+        width: 38.4375rem;
+        height: 50.0625rem;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        &Image {
+            width: 38.4375rem;
+            height: 39.125rem;
+            flex-shrink: 0;
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 3.5rem;
+        .dicribe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            align-self: stretch;
+
+            .header {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                align-self: stretch;
+            }
+            .content {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                align-self: stretch;
+            }
+            .footer {
+                display: flex;
+                align-items: center;
+                gap: 0.625rem;
+                align-self: stretch;
+            }
+        }
+        .groupCard {
+            position: relative;
+            width: 34.80638rem;
+            height: 25.875rem;
+            flex-shrink: 0;
+            gap: 2.31rem;
+            display: flex;
+            flex-direction: column;
+
+            &Normal {
+                display: flex;
+                width: 25.75rem;
+                padding: 1.125rem   ;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 1.5rem;
+
+                border-radius: 0.125rem;
+                background: #ebf0f3;
+
+                &Image {
+                    width: 1.25rem;
+                    height: 1.60713rem;
+                    flex-shrink: 0;
+                }
+                &Content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.5625rem;
+                    flex: 1 0 0;
+                    &Title {
+                        color: #000;
+                        font-family: Nunito;
+                        font-size: 1.125rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+
+                        align-self: stretch;
+                    }
+                    &1 {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.625rem;
+                        align-self: stretch;
+                    }
+                }
+            }
+            &Highlight {
+                display: flex;
+                width: 25.75rem;
+                padding: 1rem;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 1.5rem;
+                margin-left: 7rem;
+
+                border-radius: 0.125rem;
+                background: #20c6b1;
+
+                &Image {
+                    width: 1.875rem;
+                    height: 1.53406rem;
+                    flex-shrink: 0;
+                }
+                &Content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.5625rem;
+                    flex: 1 0 0;
+                    &Title {
+                        color: #000;
+                        font-family: Nunito;
+                        font-size: 1.125rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+
+                        align-self: stretch;
+                    }
+                    &1 {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.625rem;
+                        align-self: stretch;
+                    }
+                }
+            }
+
+            .curve_up{
+            position: absolute;
+            right: 0.06rem;
+            top: 3rem;
+
+                width: 9.02513rem;
+height: 10.41006rem;
+flex-shrink: 0;
+
+stroke-width: 3px;
+stroke: #20C6B1;
+            }
+
+            .curve_down{
+                position: absolute;
+                 right: 0.06rem;
+                 bottom: 3rem;
+                width: 8.90375rem;
+height: 9.8125rem;
+flex-shrink: 0;
+
+stroke-width: 3px;
+stroke: #20C6B1;
+            }
+          
+        }
+    }
+}
