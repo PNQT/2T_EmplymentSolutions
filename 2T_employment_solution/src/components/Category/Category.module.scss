@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    width: 25.75rem;
+    height: 12.875rem;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    border-radius: 0.625rem;
+    background: #ebf0f3;
+
+    .categotyImage {
+        width: 2.5rem;
+        height: 3.21426rem;
+        flex-shrink: 0;
+    }
+
+    .wrapper {
+        display: flex;
+        width: 11.5625rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .Name {
+            height: 1.5rem;
+            align-self: stretch;
+
+            color: #000;
+            text-align: center;
+            font-family: Nunito;
+            font-size: 1.325rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .Decription {
+            width: 11.5625rem;
+            height: 1.4375rem;
+
+            color: #000;
+            text-align: center;
+            font-family: Nunito;
+            font-size: 0.975rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration-line: underline;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    padding: 0rem 2.5rem 4.375rem 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    align-self: stretch;
+    width: 95rem;
+    margin: auto;
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+
+        &Title{
+            display: flex;
+            padding: 0rem 0.5rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            align-self: stretch;
+
+            .Title{
+                color: #000;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+
+        &Decr{
+            display: flex;
+            padding: 0rem 0.5rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            align-self: stretch;
+
+            .decription{
+                color: #000;
+                text-align: center;
+                font-family: Nunito;
+                font-size: 1.425rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    .groupCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 2rem;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+    .button{
+        display: flex;
+        width: 17.4375rem;
+        padding: 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .text{
+            color: #FFF;
+            text-align: center;
+            font-family: Nunito;
+            font-size: 1.325rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+}

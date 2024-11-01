@@ -16,7 +16,19 @@ import curve_up from './curve_up.svg';
 import curve_down from './curve_down.svg';
 import white_cv from './white_cv.svg';
 import send from './apply.svg';
-
+import arrow_left from './arrow_left.svg';
+import arrow_right from './arrow_right.svg';
+import estate from './estate.svg';
+import hospital from './hospital.svg';
+import constructor from './construction.svg';
+import accounting from './accounting.svg';
+import design from './design_creative.svg';
+import fashion from './fashion.svg';
+import it from './it_telecom.svg';
+import shipper from './shipping.svg';
+import instar  from './instagram.svg';
+import save from './save.svg';
+import arrow_left1 from './arrow.svg';
 
 import plus from './plus.svg';
 
@@ -40,6 +52,20 @@ const icons = {
   curve_down,
   white_cv,
   send,
+  arrow_left,
+  arrow_right,
+  estate,
+  hospital,
+  constructor,
+  accounting,
+  design,
+  fashion,
+  it,
+  shipper,
+  instar,
+  save,
+  arrow_left1,
+
 };
 
 export default icons;
