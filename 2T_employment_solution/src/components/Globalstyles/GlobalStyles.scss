@@ -106,3 +106,29 @@ html *::-webkit-scrollbar-track {
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0);
 }
+.title{
+  color: #000;
+  font-family: Nunito;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  &Center{
+    text-align: center;
+    color: #000;
+    font-family: Nunito;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.decription{
+  color: #000;
+font-family: Nunito;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

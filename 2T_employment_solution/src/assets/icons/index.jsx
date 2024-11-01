@@ -10,6 +10,13 @@ import ellipse7 from './ellipse7.svg';
 import ellipse8 from './ellipse8.svg';
 import ellipse9 from './ellipse9.svg';
 import ellipse10 from './ellipse10.svg';
+import black_cv from './black_cv.svg';
+import courses from './courses.svg';
+import curve_up from './curve_up.svg';
+import curve_down from './curve_down.svg';
+import white_cv from './white_cv.svg';
+import send from './apply.svg';
+
 
 import plus from './plus.svg';
 
@@ -26,7 +33,13 @@ const icons = {
   ellipse8,
   ellipse9,
   ellipse10,
-  plus
+  plus,
+  black_cv,
+  courses,
+  curve_up,
+  curve_down,
+  white_cv,
+  send,
 };
 
 export default icons;

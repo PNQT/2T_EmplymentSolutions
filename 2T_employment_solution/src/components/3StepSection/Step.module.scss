@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    padding: 4.375rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    align-self: stretch;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        align-self: stretch;
+    }
+    .content {
+        display: flex;
+        padding: 0rem 2.5rem;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        gap: 3.5rem;
+        align-self: stretch;
+        flex-wrap: wrap;
+        .card {
+            display: flex;
+            width: 18.75rem;
+            padding: 2rem 1rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+
+            border-radius: 0.625rem;
+            background: #20c6b1;
+
+            .name {
+                color: #fff;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+                font-family: Nunito;
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .step {
+                position: absolute;
+                left: 2rem;
+                top: 1rem;
+                color: #fff;
+                text-align: center;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+                font-family: Nunito;
+                font-size: 1.75rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}
