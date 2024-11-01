@@ -15,10 +15,11 @@ function HeroSection() {
                 <div className={cx("findAndApply")}>
                     <div className={cx("findAndApplyContent")}>
                         <h1 className={cx("findAndApplyContentTitle")}>
-                            Find and Apply for a Job that suits you!
+                            Find and Apply for a Job that suits <br /> 
+                            you!
                         </h1>
                         <p className={cx("findAndApplyContentDescription")}>
-                            Here you can find your best job, Explore hundreds of
+                            Here you can find your best job, Explore hundreds of <br />
                             jobs with us. Ready for your next adventure?
                         </p>
                     </div>
@@ -44,27 +45,27 @@ function HeroSection() {
                                 <h3>Web Developer</h3>
                             </div>
                             <div className={cx("quickSearchResultItem")}>
-                                <h3>Web Developer</h3>
+                                <h3>Front End Developer</h3>
                             </div>
                             <div className={cx("quickSearchResultItem")}>
-                                <h3>Web Developer</h3>
+                                <h3>Data Analyst</h3>
                             </div>
                             <div className={cx("quickSearchResultItem")}>
-                                <h3>Web Developer</h3>
+                                <h3>Accountant</h3>
                             </div>
                         </div>
                         <div className={cx("tear")}>
                             <div className={cx("quickSearchResultItem")}>
-                                <h3>Web Developer</h3>
+                                <h3>Photographer</h3>
                             </div>
                             <div className={cx("quickSearchResultItem")}>
-                                <h3>Web Developer</h3>
+                                <h3>Full Stack Developher</h3>
                             </div>
                             <div className={cx("quickSearchResultItem")}>
-                                <h3>Web Developer</h3>
+                                <h3>Senior Lecturer</h3>
                             </div>
                             <div className={cx("quickSearchResultItem")}>
-                                <h3>Web Developer</h3>
+                                <h3>UX Designer</h3>
                             </div>
                         </div>
                     </div>
@@ -159,10 +160,11 @@ function HeroSection() {
                     <div className={cx("heroSectionContentJobsContent")}>
                         <h5 className={cx("contentName")}>Graphic Designer</h5>
                         <h6 className={cx("normal")}>
-                            The company seeks to employ the services of
-                            a......
+                            The company seeks to employ the <br />
+                            services of a......<span className={cx("highlight")}>Read More</span>
+
                         </h6>
-                        <span className={cx("highlight")}>Read More</span>
+                        
                     </div>
                 </div>
             </div>
