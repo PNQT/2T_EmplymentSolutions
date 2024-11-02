@@ -35,6 +35,10 @@ import youtube from './youtube.svg';
 import lenovo from './lenovo.svg';
 import samsung from './samsung.svg';
 import plus from './plus.svg';
+import facebook from './facebook.svg';
+import instagram from './instagram.svg';
+import linkedin from './linkedln.svg';
+import tele from './tinder.svg';
 
 
 const icons = {
@@ -74,6 +78,10 @@ const icons = {
   youtube,
   lenovo,
   samsung,
+  facebook,
+  instagram,
+  linkedin,
+  tele,
 
 };
 
