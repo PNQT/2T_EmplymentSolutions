@@ -29,7 +29,11 @@ import shipper from './shipping.svg';
 import instar  from './instagram.svg';
 import save from './save.svg';
 import arrow_left1 from './arrow.svg';
-
+import yahoo from './yahoo.svg';
+import microsoft from './microsoft.svg';
+import youtube from './youtube.svg';
+import lenovo from './lenovo.svg';
+import samsung from './samsung.svg';
 import plus from './plus.svg';
 
 
@@ -65,6 +69,11 @@ const icons = {
   instar,
   save,
   arrow_left1,
+  yahoo,
+  microsoft,
+  youtube,
+  lenovo,
+  samsung,
 
 };
 
