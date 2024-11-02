@@ -1,5 +1,6 @@
-import Header from "./components/Layout/Header";
+import Header from "~/components/Layout/Header";
 import Home from "./pages/Home";
+import Footer from "~/components/Layout/Footer";
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header/>
       <Home/>
+      <Footer/>
 
     </>
   )
