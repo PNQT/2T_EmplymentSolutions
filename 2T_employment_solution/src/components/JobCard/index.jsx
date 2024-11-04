@@ -22,7 +22,10 @@ function JobCard({src,name,address,position,shortdecr1,shortdecr2,shortdecr3,dec
                          </div>
                     </div>
                 </div>
-                <Image src={icons.save} className={cx("save")}/>
+      
+                     <Image src={icons.save} className={cx("save")}/>
+           
+               
             </div>
             <div className={cx("content")}>
                 <div className={cx("position")}>
@@ -48,8 +51,10 @@ function JobCard({src,name,address,position,shortdecr1,shortdecr2,shortdecr3,dec
                 </div>
             </div>
             <div className={cx("footer")}>
-                <Button className={cx("button")}>Apply</Button>
-                <Button className={cx("button")} outline>Read More</Button>
+               
+                <Button className={cx("buttonApply")}>Apply</Button>
+                <Button className={cx("buttonReadMore")} outline>Read More</Button>
+               
             </div>
         </div>
      );

@@ -65,7 +65,7 @@ function Testimonial() {
       <p className={cx("role")}>{role}</p>
       <div className={cx("navigation")}>
         <button onClick={handlePrevious} className={cx("nav-button")}>
-            <Image src={icons.arrow_left} alt="Previous" />          
+            <Image src={icons.arrow_left} alt="Previous" className={cx("buttonPrevious")} />          
         </button>
         <button onClick={handleNext} className={cx("nav-button")}>
             <Image src={icons.arrow_right} alt="Next" className={cx("buttonNext")}/>

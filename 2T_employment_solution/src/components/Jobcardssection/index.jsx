@@ -93,13 +93,13 @@ function JobCardSection() {
                     shortdecr3="Short Description"
                     decription="Heloo Hole lele lolo lili lala lulu kaka kiki"
                 />         
-                     
+                
             </div>
             <div className={cx("footer")}>
     <Button 
-    className={cx("button")}
-     rightIcon={<Image src={icons.arrow_left1} />}>
-        <span className={cx("text")}>Find More Jobs</span>
+     className={cx("button")}
+     rightIcon={<Image className={cx("icon")} src={icons.arrow_left1} />}>
+    <span className={cx("text")}>Find More Jobs</span>
 
     </Button>
 </div>
