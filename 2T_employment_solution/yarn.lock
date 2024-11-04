@@ -5,7 +5,7 @@
 "2t-employment-solution@file:.":
   version "0.0.0"
   dependencies:
-    "2t-employment-solution" "file:C:/Users/KIM THOA/AppData/Local/Yarn/Cache/v6/npm-2t-employment-solution-0.0.0-2dff9088-f698-479c-83b6-5ec926c58219-1730451486279/node_modules/2t-employment-solution"
+    "2t-employment-solution" "file:C:/Users/KIM THOA/AppData/Local/Yarn/Cache/v6/npm-2t-employment-solution-0.0.0-232e2f0b-9b06-40f8-9730-748ec4c19585-1730483093060/node_modules/2t-employment-solution"
     "@testing-library/jest-dom" "^5.14.1"
     "@testing-library/react" "^13.0.0"
     "@testing-library/user-event" "^13.2.1"
