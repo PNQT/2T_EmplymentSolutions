@@ -44,12 +44,28 @@
                 align-items: center;
                 gap: 0.5rem;
                 align-self: stretch;
+                .title{
+                    color: #000;
+                    font-family: "Nunito-Regular", sans-serif;
+                    font-size: 2.2rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
             }
             .content {
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;
                 align-self: stretch;
+                .title{
+                    color: #000;
+                    font-family: "Nunito-Regular", sans-serif;
+                    font-size: 2.2rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
             }
             .footer {
                 display: flex;
@@ -76,9 +92,9 @@
                 justify-content: center;
                 align-items: flex-start;
                 gap: 1.5rem;
-
                 border-radius: 0.125rem;
                 background: #ebf0f3;
+               
                 &:hover {
                     cursor: pointer;
                     background: linear-gradient(45deg, #fff, rgb(196, 195, 195));
@@ -122,7 +138,7 @@
                 justify-content: center;
                 align-items: flex-start;
                 gap: 1.5rem;
-                margin-left: 9.3rem;
+                margin-left: 10.2rem;
 
                 border-radius: 0.125rem;
                 background: #20c6b1;
@@ -165,27 +181,26 @@
 
             .curve_up{
             position: absolute;
-            right: -2rem;
+            right: -2.8rem;
             top: 3rem;
+            width: 13.02513rem;
+            height: 19.71006rem;
+            flex-shrink: 0;
 
-                width: 12.02513rem;
-height: 16.71006rem;
-flex-shrink: 0;
-
-stroke-width: 3px;
-stroke: #20C6B1;
+            stroke-width: 3px;
+            stroke: #20C6B1;
             }
 
             .curve_down{
                 position: absolute;
-                 right: -2rem;
+                 right: -2.8rem;
                  bottom: 3rem;
-                width: 12.02513rem;//90375
-height: 16.71006rem;
-flex-shrink: 0;
+                width: 13.02513rem;//90375
+                height: 19.71006rem;
+                flex-shrink: 0;
 
-stroke-width: 3px;
-stroke: #20C6B1;
+                stroke-width: 3px;
+                stroke: #20C6B1;
             }
           
         }

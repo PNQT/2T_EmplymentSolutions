@@ -108,8 +108,8 @@ html *::-webkit-scrollbar-track {
 }
 .title{
   color: #000;
-  font-family: Nunito;
-  font-size: 3rem;
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -117,8 +117,8 @@ html *::-webkit-scrollbar-track {
   &Center{
     text-align: center;
     color: #000;
-    font-family: Nunito;
-    font-size: 1.75rem;
+    font-family: "Nunito-Regular", sans-serif;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -126,9 +126,9 @@ html *::-webkit-scrollbar-track {
 }
 .decription{
   color: #000;
-font-family: Nunito;
-font-size: 1.6rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: "Nunito-Regular", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

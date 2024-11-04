@@ -7,8 +7,10 @@
 
     border-radius: 0.625rem;
     border: 1px solid #000;
-    
-    min-height: 26rem;
+    min-width: 35rem;
+    min-height: 17rem;
+   
+ 
     .header {
         display: flex;
         align-items: center;
@@ -18,8 +20,8 @@
             align-items: flex-start;
             gap: 1.5rem;
             .logo {
-                width: 4.5rem;
-                height: 4.5rem;
+                width: 5.5rem;
+                height: 5.5rem;
             }
             .group {
                 display: flex;
@@ -29,8 +31,8 @@
                 .name {
                     color: #000;
                     text-align: center;
-                    font-family: Nunito;
-                    font-size: 1.125rem;
+                    font-family: "Nunito-Regular", sans-serif;
+                    font-size: 1.7rem;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
@@ -38,20 +40,26 @@
                 .address {
                     color: #000;
                     text-align: center;
-                    font-family: Nunito;
-                    font-size: 0.875rem;
+                    font-family: "Nunito-Regular", sans-serif;
+                    font-size: 1.3rem;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
                 }
             }
-            .save{
-                width: 1.8rem;
-                height: 2.25rem;
-            }
+           
         }
         
 
+    } 
+    .save{
+                width: 2rem;
+                height: 3rem;
+                left: 1.5rem;
+                top:1rem
+            }
+    .save:hover{
+        cursor: pointer;
     }
     .content{
         display: flex;
@@ -64,6 +72,7 @@
             align-items: center;
             gap: 0.625rem;
             align-self: stretch;
+            
         }
         .threeShortdecr{
             display: flex;
@@ -95,8 +104,9 @@
 
         
         .longdecr {
-            height: 50px;
-            max-height: 3.75em;              /* Giới hạn chiều cao */
+            width: 30rem;
+            height: 60px; 
+            max-height: 4.75em;              /* Giới hạn chiều cao */
             overflow: hidden;                /* Ẩn phần nội dung vượt quá */
           }
           
@@ -107,27 +117,45 @@
             -webkit-box-orient: vertical;    /* Đặt hướng dòng dọc cho box layout */
             overflow: hidden;                /* Ẩn phần nội dung vượt quá */
             text-overflow: ellipsis;         /* Thêm dấu "..." khi văn bản bị cắt ngắn */
-            
+         
             color: #000;
-            font-family: Nunito;
+            font-family: "Nunito-Regular", sans-serif;
             font-size: 1.3rem;
             font-style: normal;
             font-weight: 400;
-            line-height: 1.25rem; /* 142.857% */
+            line-height: 1.5rem; /* 142.857% */
             flex: 1 0 0;
           }
           
     }
     .footer{
         display: flex;
-        width: 23rem;
-        height: 2.5rem;
-        align-items: flex-start;
+        width: 30rem;
+        height: 3.5rem;
+        align-items: center;
         gap: 1rem;
 
-        .button{
+        .buttonApply{
+            width: 3rem;
             display: flex;
-            height: 2.5rem;
+            height: 3.5rem;
+            padding: 0.5rem 1rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            flex: 1 0 0;
+            &:hover{
+                cursor: pointer;
+                background: #fff;
+                border: 1px solid #20c6b1;
+                color: #20c6b1;
+            }
+        }
+        .buttonReadMore{
+            background: #fff;
+            width: 3rem;
+            display: flex;
+            height: 3.5rem;
             padding: 0.5rem 1rem;
             justify-content: center;
             align-items: center;

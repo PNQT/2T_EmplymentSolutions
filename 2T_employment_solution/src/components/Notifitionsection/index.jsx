@@ -9,7 +9,7 @@ function NotificationSection() {
         <section className={cx("container")}>
             <div className={cx("content")}>
                 <div className={cx("header")}>
-                    <p className={cx("meassage")}>Want to get notified on 
+                    <p className={cx("meassage")}>Want to get notified on <br />    
                     every Job Posting?</p>
                 </div>  
                 <div className={cx("input")}>
