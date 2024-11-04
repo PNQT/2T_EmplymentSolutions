@@ -1,0 +1,69 @@
+{
+    "jobs": [
+      {
+        "job_id": 1,
+        "title": "Software Developer",
+        "description": "Develop and maintain web applications, collaborate with the design team to enhance user experience.",
+        "requirements": "Proficient in JavaScript, experience with React and Node.js, understanding of REST APIs.",
+        "salary": 12000000.00,
+        "location": "Hà Nội",
+        "employer_id": 101,
+        "posted_date": "2024-10-01",
+        "expiry_date": "2024-12-01",
+        "job_type": "Full-time",
+        "status": "Active"
+      },
+      {
+        "job_id": 2,
+        "title": "Data Analyst",
+        "description": "Analyze datasets, generate reports to support decision-making, and identify trends.",
+        "requirements": "Proficient in SQL and Python, experience with data visualization tools like Tableau or Power BI.",
+        "salary": 10000000.00,
+        "location": "TP.HCM",
+        "employer_id": 102,
+        "posted_date": "2024-11-01",
+        "expiry_date": "2025-01-01",
+        "job_type": "Part-time",
+        "status": "Active"
+      },
+      {
+        "job_id": 3,
+        "title": "Project Manager",
+        "description": "Manage project timelines, communicate with stakeholders, and ensure project goals are met.",
+        "requirements": "Experience in project management, knowledge of Agile methodologies, strong communication skills.",
+        "salary": 15000000.00,
+        "location": "Đà Nẵng",
+        "employer_id": 103,
+        "posted_date": "2024-09-15",
+        "expiry_date": "2024-11-15",
+        "job_type": "Contract",
+        "status": "Expired"
+      },
+      {
+        "job_id": 4,
+        "title": "Marketing Specialist",
+        "description": "Plan and execute digital marketing campaigns, analyze market trends to adjust strategies.",
+        "requirements": "Experience with SEO/SEM, proficiency in marketing tools like Google Analytics, strong analytical skills.",
+        "salary": 9000000.00,
+        "location": "Hà Nội",
+        "employer_id": 104,
+        "posted_date": "2024-10-20",
+        "expiry_date": "2024-12-20",
+        "job_type": "Internship",
+        "status": "Active"
+      },
+      {
+        "job_id": 5,
+        "title": "UI/UX Designer",
+        "description": "Design user interfaces and improve user experience for mobile and web applications.",
+        "requirements": "Experience with Figma or Adobe XD, understanding of user-centered design principles.",
+        "salary": 11000000.00,
+        "location": "TP.HCM",
+        "employer_id": 105,
+        "posted_date": "2024-10-10",
+        "expiry_date": "2024-11-30",
+        "job_type": "Full-time",
+        "status": "Active"
+      }
+    ]
+  }

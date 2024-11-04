@@ -3,6 +3,7 @@ import classNames from "classnames/bind";
 import styles from "./Herosection.module.scss";
 import Button from "~/components/Button";
 import Image from "~/components/Image";
+import Search from "~/components/Search";
 import images from "~/assets/images";
 import icons from "~/assets/icons";
 
@@ -23,16 +24,7 @@ function HeroSection() {
                             jobs with us. Ready for your next adventure?
                         </p>
                     </div>
-                    <div className={cx("findAndApplySearch")}>
-                        <input
-                            className={cx("findAndApplySearchInput")}
-                            type="text"
-                            placeholder="Search for jobs"
-                        />
-                        <Button className={cx("findAndApplySearchButton")}>
-                            Search
-                        </Button>
-                    </div>
+                    <Search/>
                 </div>
 
                 <div className={cx("quickSearch")}>
