@@ -53,6 +53,15 @@
     transform: scale(1.1);
     filter: brightness(0.7);
   }
+
+  .deleteAccount{
+    color: red;
+
+    &:hover{
+        cursor: pointer;
+
+    }
+  }
   
   .avatar-container:hover .camera-icon {
     opacity: 1;
