@@ -24,7 +24,7 @@ function HeroSection() {
                             jobs with us. Ready for your next adventure?
                         </p>
                     </div>
-                    <Search/>
+                    <div className={cx('searchBar')}><Search /></div>
                 </div>
 
                 <div className={cx("quickSearch")}>

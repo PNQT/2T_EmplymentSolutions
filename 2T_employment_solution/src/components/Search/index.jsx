@@ -37,7 +37,7 @@ function Search() {
                 ref={inputRef}
                 className={cx("findAndApplySearchInput")}
                 type="text"
-                placeholder="Search for users"
+                placeholder="Search for Jobs"
                 value={searchValue}
                 onChange={handleChange}
             />
