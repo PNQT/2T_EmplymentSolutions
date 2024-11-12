@@ -5,9 +5,8 @@ const routes = {
     search: '/search',
     post : '/post',
     apply : '/apply',
-    
-
-
+    profile: '/profile',
+    setting: '/setting',
 }
 export default routes;
 

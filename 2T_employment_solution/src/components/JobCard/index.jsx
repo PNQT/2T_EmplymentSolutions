@@ -6,9 +6,9 @@ import Button from "~/components/Button";
 
 const cx = classNames.bind(styles);
 // eslint-disable-next-line react/prop-types
-function JobCard({src,name,address,position,shortdecr1,shortdecr2,shortdecr3,decription}) {
+function JobCard({src,name,address,position,shortdecr1,shortdecr2,shortdecr3,decription,onClick}) {
     return ( 
-        <div className={cx("container")}>
+        <div className={cx("container")}onClick={onClick}>
             <div className={cx("header")}>
                 <div className={cx("wrapper")}>
                     <Image  
@@ -21,12 +21,9 @@ function JobCard({src,name,address,position,shortdecr1,shortdecr2,shortdecr3,dec
                             {address}
                          </div>
                     </div>
-                </div>
-      
-                     <Image src={icons.save} className={cx("save")}/>
-           
-               
+                </div>    
             </div>
+                <Image src={icons.save} className={cx("save")}/>
             <div className={cx("content")}>
                 <div className={cx("position")}>
                    <p className={cx("title")}>

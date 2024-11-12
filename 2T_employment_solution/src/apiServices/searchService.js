@@ -1,11 +1,10 @@
 import * as request from '~/unlti/request' ;
 
-export const search = async (q , type='more')=> {
+export const search = async (q )=> {
     try {
-        const res = await request.get(`users/search`,{
+        const res = await request.get(`search`,{
             params: {
-                q,
-                type
+                q,         
             }
         })
         return res.data

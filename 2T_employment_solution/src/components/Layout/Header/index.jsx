@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
+import Tippy from '@tippyjs/react';
+import { FaUser, FaCog, FaSignOutAlt } from 'react-icons/fa'; // Import các biểu tượng từ react-icons
+
 
 import styles from "./Header.module.scss";
 import Button from "~/components/Button";
@@ -14,27 +17,45 @@ function Header() {
     const [isScrolling, setIsScrolling] = useState(false);
     const timer = useRef(null);
 
+    const renderMenu = () => (
+        <div className={cx('menu')}>
+          <Link to={routesConfig.profile} className={cx('menuItem')}>
+            <FaUser className={cx('icon')} />
+            Profile
+          </Link>
+          <Link to={routesConfig.setting} className={cx('menuItem')}>
+            <FaCog className={cx('icon')} />
+            Settings
+          </Link>
+          <Link to="/logout" className={cx('menuItem', 'logout')}>
+            <FaSignOutAlt className={cx('icon')} />
+            Logout
+          </Link>
+
+        </div>
+      );
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
             const headerHeight = 36;
 
             if (scrollTop > headerHeight) {
-                setIsScrolling(true); // Hides the header
+                setIsScrolling(true); 
             } else {
-                setIsScrolling(false); // Shows the header
+                setIsScrolling(false); 
             }
 
             clearTimeout(timer.current);
             timer.current = setTimeout(() => {
-                setIsScrolling(false); // Show the header after scrolling stops
-            }, 500); // Adjust the delay to 3 seconds
+                setIsScrolling(false); 
+            }, 500);
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);
-            clearTimeout(timer.current); // Clear the timer on component unmount
+            clearTimeout(timer.current); 
         };
     }, []);
 
@@ -92,10 +113,16 @@ function Header() {
             <div className={cx("groupButton")}>
                 {currentUser ? (
                     <>
-                        <Image
-                            className={cx("user-avatar")}
-                            src="https://via.placeholder.com/150"
-                        />
+                        {
+                             <Tippy content={renderMenu()} interactive={true} trigger="click" placement="bottom" className="tipppy"
+                             >
+                             <Image
+                               className={cx('user-avatar')}
+                               src="https://via.placeholder.com/150"
+                             />
+                            </Tippy>
+                        }
+                        
                     </>
                 ) : (
                     <>

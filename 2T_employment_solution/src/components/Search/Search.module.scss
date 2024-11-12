@@ -1,7 +1,12 @@
+.container{
+    display: flex;
+    gap: 3rem;
+}
+
 .findAndApplySearch{
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 3rem;
 
     &Input {
         padding: 0.5rem 1rem;
