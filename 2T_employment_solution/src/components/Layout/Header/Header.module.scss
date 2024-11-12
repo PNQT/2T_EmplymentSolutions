@@ -7,10 +7,11 @@
     height: var(--default-header-height);
     background-color: var(--yellow);
     display: flex;
+    flex-direction: row;
     padding: 1rem 2.5rem;
     justify-content: center;
     align-items: flex-start;
-    align-content: space-between;
+    align-content: space-around;
     column-gap: 265px;
     align-self: stretch;
     flex-wrap: wrap;
@@ -22,6 +23,17 @@
         opacity: 0;
         pointer-events: none;
     }
+
+    .hamburger {
+      display: none; // Hide hamburger by default
+  
+      @media (max-width: 768px) {
+          display: block;
+          background: none;
+          border: none;
+          font-size: 24px;
+      }
+  }
 
     .logo {
         display: flex;
@@ -159,6 +171,75 @@
     .icon {
       margin-right: 8px;
     }
+    .mobileMenu {
+      background-color:rgb(244,244,244);
+      z-index: 333;
+      width: 100%;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .menuItemHamberger{
+      display: flex;
+      margin: auto;
+      align-items: center;
+      padding: 8px 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      &:hover { 
+        background-color: #f0f0f0;
+      }
+    }
    
     
+}
+@media (max-width: 1270px) {
+  .wrapper {
+    flex-direction: row;
+    padding: 10px; 
+    justify-content: space-around;
+
+    .menuBar {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+      position:absolute;
+      top: 13px;
+      right: 70px;
+    }
+    .logo{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+  }
+}
+@media (max-width: 772px) {
+  .wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  .logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .groupButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .hamburger{
+    position:absolute;
+    top: 13px;
+    right: 70px;
+  }
+  .mobileMenu {
+    position: absolute;
+    top: 32px;
+  }
+
+
 }
