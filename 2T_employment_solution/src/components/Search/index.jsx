@@ -1,15 +1,20 @@
 import classNames from "classnames/bind";
+import { useState, useRef } from "react";
+import Modal from 'react-modal';
 import { useNavigate } from "react-router-dom";
+
 import Button from "~/components/Button";
 import styles from "./Search.module.scss";
-import { useState, useRef } from "react";
 
 const cx = classNames.bind(styles);
+
+Modal.setAppElement('#root');
 
 function Search() {
     const [searchValue, setSearchValue] = useState('');
     const inputRef = useRef();
     const navigate = useNavigate();
+    
 
     const handleChange = (e) => {
         const searchValue = e.target.value;
@@ -27,7 +32,7 @@ function Search() {
     };
 
     return (
-        <div className={cx("findAndApplySearch")}>
+        <div className={cx("container")}>
             <input
                 ref={inputRef}
                 className={cx("findAndApplySearchInput")}

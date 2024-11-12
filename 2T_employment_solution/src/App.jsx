@@ -2,8 +2,11 @@ import { Fragment } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { publicRoutes } from "./routes";
 import { DefaultLayout } from "~/components/Layout";
+import "~/Stylesheet/index.scss";
+// import Login from "./pages/Login";
 function App() {
   return (
+    
     <Router>
       <div className="App">
         <Routes>
@@ -24,7 +27,7 @@ function App() {
                 path={route.path}
                 element={
                   <Layout>
-                    <Page />
+                    <Page/>
                   </Layout>
                 }
               />
