@@ -12,7 +12,8 @@ const cx = classNames.bind(styles);
 
 Modal.setAppElement('#root'); // Thiết lập phần tử gốc cho modal
 
-function Setting() {
+function Setting() { 
+  const [deleteModalIsOpen, setDeleteModalIsOpen] = useState(false);
   const [avatarModalIsOpen, setAvatarModalIsOpen] = useState(false);
   const [passwordModalIsOpen, setPasswordModalIsOpen] = useState(false);
   const [avatar, setAvatar] = useState("https://via.placeholder.com/150"); 
@@ -36,6 +37,14 @@ function Setting() {
     setPasswordModalIsOpen(false);
   };
 
+  const openDeleteModal = () => {
+    setDeleteModalIsOpen(true);
+  };
+
+  const closeDeleteModal = () => {
+    setDeleteModalIsOpen(false);
+  };
+
   const handleAvatarChange = (event) => {
     const file = event.target.files[0];
     if (file && file.type.startsWith('image/')) {
@@ -48,6 +57,15 @@ function Setting() {
       alert('Vui lòng chọn một tệp ảnh!');
     }
   };
+
+  const HandleDelete = (e) =>{
+    e.preventDefault();
+    alert('Tài khoản đã được xóa!');
+    closePasswordModal();
+
+  }
+
+  
 
   // Lưu avatar mới
   const handleSaveAvatar = () => {
@@ -64,7 +82,7 @@ function Setting() {
     closePasswordModal(); 
   };
 
-  return (
+  return (  
     <div className={cx('setting-container')}>
      <div className={'setting'}>
         
@@ -96,6 +114,7 @@ function Setting() {
               <Button className={cx('change-profile-button')}>Go to Profile</Button>
             </Link>
           </div>
+        <div className={cx("deleteAccount") }  onClick={openDeleteModal}>Xóa tài khoản:</div>
         </div>
      </div>
       <Link to="/logout" className={cx('menuItem', 'logout')}>
@@ -140,6 +159,31 @@ function Setting() {
           </div>
           <Button type="submit">Save</Button>
           <Button type="button" onClick={closePasswordModal}>Cancel</Button>
+        </form>
+      </Modal>
+
+      
+      <Modal
+        isOpen={deleteModalIsOpen}
+        onRequestClose={closeDeleteModal}
+        contentLabel="Delete Account"
+        className={cx('modal')}
+        overlayClassName={cx('overlay')}
+      >
+        <h2>Delete Account</h2>
+        <form onSubmit={HandleDelete}>
+          <div className={cx('form-group')}>
+            <label htmlFor="delete-password">Enter Password to Confirm</label>
+            <input
+              type="password"
+              id="delete-password"
+              name="delete-password"
+
+              required
+            />
+          </div>
+          <Button type="submit">Delete</Button>
+          <Button type="button" onClick={closeDeleteModal}>Cancel</Button>
         </form>
       </Modal>
     </div>
